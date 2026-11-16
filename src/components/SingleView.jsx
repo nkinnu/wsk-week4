@@ -11,6 +11,7 @@ const SingleView = (props) => {
         </video>
       )}
       <p>{item.description}</p>
+      <button onClick={() => setItem(null)}>Close</button>
     </dialog>
   );
 };

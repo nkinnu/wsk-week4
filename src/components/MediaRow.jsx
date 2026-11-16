@@ -1,10 +1,6 @@
 const MediaRow = ({item, setItem}) => {
   return (
-    <tr
-      onClick={() => {
-        setItem(item);
-      }}
-    >
+    <tr>
       <td>
         <img src={item.thumbnail} alt={item.title} />
       </td>
@@ -13,6 +9,9 @@ const MediaRow = ({item, setItem}) => {
       <td>{new Date(item.created_at).toLocaleString('fi-FI')}</td>
       <td>{item.filesize}</td>
       <td>{item.media_type}</td>
+      <td>
+        <button onClick={() => setItem(item)}>Show</button>
+      </td>
     </tr>
   );
 };

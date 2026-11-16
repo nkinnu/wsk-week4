@@ -52,6 +52,7 @@ const Home = () => {
             <th>Created</th>
             <th>Size</th>
             <th>Type</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
