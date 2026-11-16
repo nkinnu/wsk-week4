@@ -1,3 +1,3 @@
-## Routing assignment
+## Hooks assignment
 
-Open [Routing_app](https://users.metropolia.fi/~nikojki/wsk-routing/) to view it in the browser.
+Open [Hooks_app](https://users.metropolia.fi/~nikojki/hooks/) to view it in the browser.
