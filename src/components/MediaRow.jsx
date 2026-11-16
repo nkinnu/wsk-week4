@@ -1,6 +1,10 @@
-const MediaRow = ({item}) => {
+const MediaRow = ({item, setItem}) => {
   return (
-    <tr key={item.media_id}>
+    <tr
+      onClick={() => {
+        setItem(item);
+      }}
+    >
       <td>
         <img src={item.thumbnail} alt={item.title} />
       </td>
