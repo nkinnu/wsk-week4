@@ -1,4 +1,6 @@
-const MediaRow = ({item, setItem}) => {
+import {Link} from 'react-router';
+
+const MediaRow = ({item}) => {
   return (
     <tr>
       <td>
@@ -10,7 +12,9 @@ const MediaRow = ({item, setItem}) => {
       <td>{item.filesize}</td>
       <td>{item.media_type}</td>
       <td>
-        <button onClick={() => setItem(item)}>Show</button>
+        <Link to="/single" state={item}>
+          Show
+        </Link>
       </td>
     </tr>
   );
