@@ -16,6 +16,7 @@ const Single = () => {
         </video>
       )}
       <p>{item.description}</p>
+      <p>Owner: {item.username}</p>
     </>
   );
 };
